@@ -1,0 +1,18 @@
+Installtions
+
+
+
+
+helpful COMMANDS
+
+python3 -m venv .venv source
+source .venv/bin/activate
+deactivate 
+
+export PATH=/usr/bin:/bin
+
+
+Notes
+
+once the option selection is chosen continue with gerneral help
+so we can have mutple options apear to be asked

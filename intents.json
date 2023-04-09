@@ -1,0 +1,166 @@
+{
+    "intents":[
+        {
+         "tag":"greet",
+         "patterns":[
+            "hey",
+            "hello",
+            "hi",
+            "hello there",
+            "good morning",
+            "good evening",
+            "any one there",
+            "hey there",
+            "let's go",
+            "hey dude",
+            "goodmorning",
+            "goodevening",
+            "good afternoon",
+            "I need help",
+            "I am stuck",
+            "help",
+            "stuck"
+         ],
+         "responses":[
+            "How may I assist you",
+            "How can I help",
+            "salutaitions, how may I assist",
+            "Greetings, how ca I aid"
+         ]  
+        },
+        {   
+            "tag": "goodbye",
+            "patterns": [
+                "cu",
+                "good by",
+                "talk to you later",
+                "good night",
+                "bye",
+                "goodbye",
+                "have a nice day",
+                "see you around",
+                "bye bye",
+                "see you later",
+                "fare well",
+                "thank you",
+                "have a good one",
+                "done",
+                "finished"
+                ],
+            "responses":[
+                "glad to serve you",
+                "take care",
+                "have a good one"
+            ]    
+        },{
+            "tag": "navigate",
+            "patterns": [
+                "how do I order",
+                "how to order",
+                "order help",
+                "help me order",
+                "order",
+                "I want to order",
+                "I just want to order and can not figure it out"
+            ],
+            "responses": [
+                "go to the menu chose what you like, then go to cart to make sure you have all, finally checkout to pay"
+            ]
+        },{
+                "tag": "common_reason_wont_checkout",
+                "patterns": [
+                    "help me buy, won't accept",
+                    "help me buy",
+                    "I can't make payment",
+                    "help me checkout",
+                    "stuck on payment",
+                    "i want to buy and leave",
+                    "help checkout so i can go",
+                    "can not checkout",
+                    "wont checkout",
+                    "help me purchase, not confirming",
+                    "won't let me pay and leave",
+                    "can not pay and leave",
+                    "can't pay so I can checkout"
+                    ],
+                "responses": [
+                 "before checkout make sure address is accurate, credit card functioning with your bank, reload the page"
+                    ]
+            },{
+                "tag": "lower_prices",
+                "patterns": [
+                    "any good deals",
+                    "deal of the day",
+                    "specials",
+                    "rewards program",
+                    "discount",
+                    "any good offers",
+                    "good offers",
+                    "delivery special",
+                    "sales",
+                    "lay aways"
+                ],
+                "responses":[
+                    "if you have promo code place it when getting to the chekout, for speical price today",
+                    "go to the account page and put information to earn points with every pruchase used to get cash back"
+                ]
+            },
+            {
+                "tag": "holiday_prices",
+                "patterns": [
+                    "deal of the season",
+                    "days specials",
+                    "black friday or cycber monday",
+                    "specials for holiday",
+                    "occasion discount",
+                    "christmas",
+                    "hanaka",
+                    "kawanza",
+                    "eid",
+                    "ramadan",
+                    "valintinse day",
+                    "easter",
+                    "holiday specials",
+                    "holiday deals",
+                    "pilgramage of the Vanir or Aesier"
+                ],
+                "responses": [
+                    "on holidays promo code will be avaliable to place in discount promt when checking out"
+                ]
+            },
+            {
+                "tag": "payment_menu_frozen",
+                "patterns": [
+                    "I can not make the order",
+                    "I cant make the order",
+                    "menu is paused",
+                    "paused menu",
+                    "payment not repsoning",
+                    "no checkout",
+                    "checkout not working",
+                    "can't pay"
+                ],
+                "responses": [
+                        "refresh the page, all iteams selected will be saved, and payment info will be reset"
+                ]
+            },
+            {
+                "tag": "Frozen_page",
+                "patterns": [
+                    "page is frozen",
+                    "screen frozen",
+                    "menu is frozen",
+                    "screen frozen",
+                    "checkout fozen",
+                    "page is frozen"
+                ],
+                "responses": [
+                    "if you made an account, close the app and reopen, this will reset the system; actions prevously take will still be save"
+                ]
+            }
+
+    ]
+}
+
+
+
