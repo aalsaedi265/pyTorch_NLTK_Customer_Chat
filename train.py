@@ -4,7 +4,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
-
+from model import NeuralNet
 
 with open('intents.json','r') as f:
     intents = json.load(f)
@@ -51,6 +51,30 @@ class ChatDataset(Dataset):
         return self.n_samples
 
 batch_size =8
+hidden_size=8
+output_size= len(tags)
+input_size = len(x_train[0])
+learning_rate = 0.001
+num_epochs = 1000
+# print(input_size, len(all_words))
+# print(output_size, tags)
     
 dataset = ChatDataset()
 train_loader = DataLoader(dataset=dataset,batch_size=batch_size, shuffle=True ,num_workers=0)#experiemnt with 2 or 0
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = NeuralNet(input_size, hidden_size, output_size).to(device)
+
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr = learning_rate)
+
+for epoch in range(num_epochs):
+    for(words, labels) in train_loader:
+        words = words.to(device)
+        labels = labels.to(device)
+        
+        outputs = model(words)
+        loss = criterion(outputs, labels)
+        
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
