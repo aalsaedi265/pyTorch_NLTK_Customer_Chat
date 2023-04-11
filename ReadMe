@@ -1,5 +1,7 @@
 Installtions
-
+pip3 install nltk
+pip3 install numpy
+pip3 instal torch
 
 
 
@@ -13,6 +15,8 @@ export PATH=/usr/bin:/bin
 
 
 Notes
+Feed forward nural net
+https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
 
 once the option selection is chosen continue with gerneral help
 so we can have mutple options apear to be asked
