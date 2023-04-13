@@ -61,6 +61,21 @@ body {
   flex: 1;
   padding-right: 4px;
 }
+.send button{
+position: relative;
+  
+  width: 45px;
+  height: 36px;
+  border-radius: 18px;
+  background-color:#480e7e;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+
+}
 #txtInput {
   line-height: 30px;
   padding: 8px 10px;
