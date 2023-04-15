@@ -1,35 +1,39 @@
-<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/static/style.css">
 
-<html lang ="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FEED</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            {% comment %} <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> {% endcomment %}
-
-        <link rel="stylesheet" href="/static/style.css">
-    </head>
-    <body>
-        <div class="container">
-          <div class="chat-header">
-            <div class="logo">
-              <img src="/static/Feed.png" alt="cwt" />
+<head>
+    <meta charset="UTF-8">
+    <title>FEED</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Questions Welcomed</h4>
+                    <p class="chatbox__description--header">Ask here</p>
+                </div>
             </div>
-            <div class="title">Got a Question</div>
-          </div>
-          <div class="chat-body"></div>
-          <div class="chat-input">
-            <div class="input-sec">
-              <input type="text" id="txtInput" placeholder="Typ here" autofocus />
+            <div class="chatbox__messages">
+                <div></div>
             </div>
-            <div class="send">
-              <button>Send</button>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
             </div>
-          </div>
         </div>
-      </body>
+        <div class="chatbox__button">
+            <button><img src="/static/Feed.png" /></button>
+        </div>
+    </div>
+</div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="/static/app.js"></script>
+</body>
 </html>
-

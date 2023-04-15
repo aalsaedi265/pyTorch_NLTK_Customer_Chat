@@ -22,7 +22,7 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Golden Wind"
+bot_name = "Bot"
 print("Talk! type 'quit' to exit")
 
 def get_response(msg):
