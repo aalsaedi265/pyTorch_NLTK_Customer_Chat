@@ -20,3 +20,7 @@ https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
 
 once the option selection is chosen continue with gerneral help
 so we can have mutple options apear to be asked
+
+the local prot was 5000
+if using lenenoe may need to change the port the lenode port which is
+45.33.14.128
