@@ -25,7 +25,7 @@
             "How may I assist you",
             "How can I help",
             "salutaitions, how may I assist",
-            "Greetings, how ca I aid"
+            "Greetings, how can I aid"
          ]  
         },
         {   
@@ -156,6 +156,37 @@
                 ],
                 "responses": [
                     "if you made an account, close the app and reopen, this will reset the system; actions prevously take will still be save"
+                ]
+            },
+            {
+                "tag": "arabic_canNot_checkout",
+                "patterns": [
+                    "لا يمكن الخروج",
+                    "لا أستطيع أن أشتري",
+                    "الخروج لا يعمل"
+                ],
+                "responses": [
+                    "تحقق من اتصال الإنترنت وتأكد من بيانات الاعتماد",
+                    "تأكد من عدم نفاد المنتج من المخزون"
+                ]
+            },
+            {
+                "tag":"confused",
+                "patterns":[
+                    "that is not what I want",
+                    "not what I said",
+                    "your useless",
+                    "wrong",
+                    "I did not ask for that",
+                    "incorrect",
+                    "inaccurate"
+                ],
+                "responses":[
+                    "I do not understand may you say it in as few words and concise as possible",
+                    "I do not undersant may you repeat what you said in as few words and as direct as possible",
+                    "I appologies for the inconvenience say at again but differenlty and in fewer words",
+                    "Appologies for the misundertanding may rephrase it as direct as possible",
+                    "Sorry for misunderstanding you, rephrase it in as few words as you can"
                 ]
             }
 

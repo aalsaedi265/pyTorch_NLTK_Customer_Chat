@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang ="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FEED</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class="chat-header">
+            <div class="logo">
+              <img src="/static/Feed.png" alt="cwt" />
+            </div>
+            <div class="title">Got a Question</div>
+          </div>
+          <div class="chat-body"></div>
+          <div class="chat-input">
+            <div class="input-sec">
+              <input type="text" id="txtInput" placeholder="Typ here" autofocus />
+            </div>
+            <div class="send">
+              <button>Send</button>
+            </div>
+          </div>
+        </div>
+       
+        <script>
+            $SCRIPT_ROOT = {{request.script_root | tojson}}
+        </script>
+        <script type = "text" href="/static/app.js"></script>
+      </body>
+</html>
+
